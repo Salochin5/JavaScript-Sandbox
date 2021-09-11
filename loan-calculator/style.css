@@ -1,0 +1,6 @@
+/* Hiding the loader and results until Calculate Trigger */
+
+#loading,
+#results {
+    display: none;
+}

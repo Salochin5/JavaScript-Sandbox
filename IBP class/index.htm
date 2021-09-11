@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML DataList</title>
+    <link rel="stylesheet" href="../links/bootstrap/css/bootstrap.min.css">
+
+    <!-- Base tag specifies the base URL for all relative URLs in a document -->
+    <!-- <base href="https://www.ksms.or.ke" target="_blank"> -->
+
+    <style>
+        a {
+            color: #aaa;
+            border-radius: 15px;
+            text-decoration: none;
+        }
+        
+        .targ:hover {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<!-- <frameset cols="100, 200, 500">
+    <frame name="left" src="../githubFinder/index.htm">
+        <frame name="center" src="../loan-calculator/index.htm">
+            <frame name="right" src="../number-guesser/index.htm">
+                <noframes></noframes>
+</frameset> -->
+
+<body>
+    <div class="container" id="linking">
+        <lead>
+            <h2 class="text-success">IBP LIST ClASS</h2>
+        </lead>
+    </div>
+    <div class="container">
+        <dl>
+            <dt><b>Html DataList</b></dt>
+            <dd>This stands for HTTPS</dd>
+            <dt><b>Html is friendly</b></dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, non.</dd>
+        </dl>
+    </div>
+
+    <div class="container px-4">
+        <p>
+            - HTML links are contained in a webpage that take the user directly to other pages and even specific part of a given page. <br> - This links are known as hyperlinks <br> and images. <br>
+        </p>
+        <p>- Hyperlinks allow navigation between websites by clicking on word, phrase</p>
+
+        <h3 class="text-warning"><b>Linking a Document</b></h3>
+        <p>-A link is specified using html tags &lt;a&gt; <br> This tag is called anchor tag and anything between the opening of ancher tag and the closing tag become part of link and a user can click that part to reach to the link document.</p>
+        <p>e.g. &lt;a href="document url"...&gt;<br> Attribute list link text &lt;/a&gt;</p>
+
+        <h5>Example 1</h5>
+        <p>white html program which links a user to any website</p>
+
+        <div class="container bg-dark rounded p-3 w-50 mx-auto">
+            <p><a href="https://www.google.com"> Click on me to open my website</a></p><br>
+            <p><a href="#linking"> This will link you to top page</a></p>
+        </div>
+
+        <h3 class="text-warning mt-4 ml-5">Target Attribute</h3>
+        <p>We use the target attribute to navigate in a website. The attribute is used to specify the location where link document is open</p>
+
+        <div class="container">
+            <table class="table table-info rounded w-100 mx-auto">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Target Attribut</th>
+                        <th scope="col">Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>_blank</td>
+                        <td>-It opens the link document in a new window or a tab.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>_self</td>
+                        <td>-It opens the link document in the same frame.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>_parent</td>
+                        <td>-It opens the link document in the parent frame.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>_top</td>
+                        <td>-It opens the link document in the full body of the window.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>_targetFrame</td>
+                        <td>-It opens the link document in a name target frame.</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <h4 class="p-2">Example to demonstrate target Attributes</h4>
+        <div class="container">
+            <p><a href="#" target="_blank" class="text-dark">A link targeting a <span class="text-warning targ">new page</span></a></p>
+            <p><a href="#" target="_self" class="text-dark">A link opening in <span class="text-info targ">self</span></a></p>
+            <p><a href="#" target="_top" class="text-dark">A link targeting on <span class="text-danger targ">Top</span></a></p>
+            <p><a href="#" target="_parent" class="text-dark">A link targeting the <span class="text-primary targ">Parent</span></a></p>
+        </div>
+        <hr>
+        <div class="container">
+            <h3>Use of Base Path target</h3>
+            <p>HTML documents related to base path target will not complete the <i><b>url</b></i> for every link but only the base tag.</p>
+            <p>The base Tag is used to give a path for all the links of a browser to concatinate with relative path to make a complete <i><b>url</b></i>.</p>
+        </div>
+
+        <div class="container">
+            <h3>Linking to a page section</h3>
+            <p>We can create a link to a particular section of a given webpage by using name attribute of the page.</p>
+
+            <strong>Step 1</strong>
+            <p>Create a link to the place where you want to reach within a page and name it using the &lt;a&gt; tag. <br> e.g. &lt;h1&gt; Html Text link &lt;a name="top"&gt;&lt;/a&gt;&lt;/h1&gt;</p> <br>
+            <p>Html Text link
+                <a href="#" name="_top">Click Me!</a>
+            </p>
+            <strong>Step 2</strong>
+            <p>Create hyperlink to link the document and place where you want to link. <br> e.g. &lt;a href="/html/html-links.html#top"&gt; Go to the Top &lt;/a&gt;</p>
+            <a href="http://127.0.0.1:5500/class/datalist.htm#top"> Go to the top </a>
+        </div>
+        <hr>
+        <div class="container">
+            <h3>HTML Image Links</h3>
+            <div class="row">
+                <p>The images will take us to specified links.</p>
+                <div class="col-6">
+                    <a href="http://google.com" target="_self">
+                        <img class="container-fluid img-thumbnail border-primary" src="images/pexel1.jpg" alt="">
+                    </a><br><br>
+                </div>
+                <div class="col-6">
+                    <a href="http://google.com" target="_self">
+                        <img class="container-fluid img-thumbnail border-primary" src="images/pexel2.jpg" alt="">
+                    </a><br><br>
+                </div>
+                <a href="https://www.pexels.com/photo/macbook-air-beside-notebook-and-camera-916335/" class="text-center">This link takes as to a pexel browser</a>
+            </div>
+        </div>
+        <div class="container">
+            <h3>HTML Email Links</h3>
+            <div class="row">
+                <p>HTML tag &lt;a> provide users with specific email address to send and email to. <br> While using &lt;a> tag, user will be prompted to use mailto: email along with the href attributes. <br> The following is a syntax of using mailto instead
+                    of using http: <br> (E.g.)
+                    <ul>
+                        <li>
+                            &lt;a> href="mailto: kamanunyutu@gmail.com, mushokikamary@gmail.com, jeremiahmukarah@gmail.com" sendemail &gt;a>
+                        </li>
+                    </ul> <br> The above code will generate sent email. When the user clicks the link, it will launch one email client</p>
+
+            </div>
+        </div>
+        <div class="container">
+            <h3>SETTING OF DEFAULT EMAIL SETTING</h3>
+            <p>To specify default email subject and email body along with your email address, follow the example below: <br>
+                <ul>
+                    <li>&lt;a href="mailto:ict10@gmail.com?subject=send feedback&body=message"> &lt;/a></li>
+                </ul>
+            </p>
+
+
+        </div>
+        <div class="container">
+            <h3>FRAMES</h3>
+            <p>Frames are used to divide a browser window into multiple sections. Whereas each section can load separately in html document. <br> Frames is a collection of frames in a browser window can also be known as &lt;frameset&gt;</p>
+            <p>Window can be divided into frames in a similar way with the table into rows and columns</p> <br><br>
+
+            <h3>Disadvantages of &lt;Frames&gt;</h3>
+            <ol>
+                <li>Some smaller devices cannot cope with the frames often because their screen is not big enough to be divided up</li>
+                <li>Sometimes pages can be displayed differently on different computers due to screen resolution</li>
+                <li>There are some browsers that do not support frame technology</li>
+                <li>Some frames can make production of a website complicated</li>
+                <li>It is easy to create a badly constracted website using &lt;frameset&gt;</li>
+                <li>The use of too many frames can put a higher workload on the server.</li>
+            </ol> <br>
+
+            <h3>Advantages of &lt;Frames&gt;</h3>
+            <ul>
+                <li>It allows the user to view multiple document within a single webpage.</li>
+                <li>It is possible to load pages from different servers in a single &lt;frameset&gt;</li>
+                <li>The older browsers that do not support &lt;frames&gt; can be addressed using the &lt;noframes&gt; tag.</li>
+            </ul>
+
+            <h2>How to Create A Frame</h2>
+            <p>To use a frame on page we use &lt;frameset&gt; tag instead of body tag. The &lt;frameset&gt; tag defines how to divide a window into frames. <br> The row attribute of a &lt;frame&gt; defines horizontal frames and column attribute defines vertical
+                frames. Each frame is indicated by &lt;frame&gt; tag which defines html document open in the frame.</p>
+
+            <h3>Example to demonstrate how to divide frames into 3</h3>
+            <div class="lead">
+                &lt;frameset cols="100, 200, 500"> <br> &lt;frame name="left" src="../githubFinder/index.htm"> <br> &lt;frame name="center" src="../loan-calculator/index.htm"> <br> &lt;frame name="right" src="../number-guesser/index.htm"> <br> &lt;noframes>&lt;/noframes>
+                <br> &lt;/frameset>
+            </div>
+
+        </div>
+        <div class="container mt-5">
+            <h3>Frame Name && Target Attribute</h3>
+            <p>The use of frames in a web browser is to place navigation bar in one frame and load main pages in a separate frame</p>
+            <p>An example t express the frame name and target attributes</p>
+
+            <p> <strong> Example 1 </strong></p>
+            <div class="lead">
+                &lt;frameset rows="300 *"&gt; <br> &lt;frameset src="../githubFinder/index.htm" name="menu_page"&gt;&lt;/frameset&gt; <br> &lt;frameset src="../ageCalculator/index.htm" name="main"&gt;&lt;/frameset&gt;<br> &lt;/frameset&gt;
+            </div>
+
+            <p>The two columns to fill with two frames, the first frame is 200 pixels wide and will contain the navigation menubar implemented by the menu.html file <br> The second column fail in remaining space and will contain the main part of the page
+                and is implemented by main.htm file. <br> Therefore the 3 page, main_page is the target frame attribute <br> The main page and the content from any link will be displayed on the screen, such that on a click, the result can be executed.</p>
+            <p> <strong> Example 2 </strong> <br> Html code to display main_page and its content</p>
+            <div class="lead">
+                <p>This is the main_page and its content from any link will be displayed on screen</p>
+                <p>On click of a link, it will display the result</p>
+
+                &lt;a href="http://www.google.com" target="main_page"> Google &lt;a> <br> &lt;a href="http://www.microsoft.com" target="main_page"> Microsoft &lt;a> <br> &lt;a href="http://www.BBC-News.com" target="main_page"> BBC News &lt;a> <br> &lt;a
+                href="http://www.citizenTv.com" target="main_page"> CItizen Tv &lt;a>
+            </div>
+
+        </div>
+        <div class="container">
+            <p>If the user clicks the links available in the left panel and see the results, the target attribute can also take one of the values.</p>
+
+            <div class="container bg-dark rounded p-3 w-50 mx-auto text-center">
+                <p><a href="./frameset.htm"> Click on me to explore that feature</a></p>
+            </div>
+
+            <table class="table table-striped">
+                <thead>
+                    <th scope="col">#</th>
+                    <th>Option</th>
+                    <th>Description</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>_self</td>
+                        <td>_self</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>_self</td>
+                        <td>Load a page into a new browser window</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>_parent</td>
+                        <td>Load a page into the parent window which in the case of a single frameset is the main browser window </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>_top</td>
+                        <td>Load the page into the browser window, replacing any current page </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <td>_targetFrame</td>
+                        <td>Load the page into a named target frame </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="container">
+            <h3>iFrames</h3>
+            <p>iFrames define an online frame with html tag &lt;iFrame&gt;. <br> The &lt;iFrame&gt; tag is not related to frameset tag, instead it can appear anywhere in your document. <br> The iFrame tag defines a rectangular region where document content
+                of your browser can be displayed separately.</p>
+            <p><span class="lead">Question:</span> <br> Wrire HTML program to implement &lt;iFrame&gt; tags and display the content on your screen. </p>
+            <p><span class="lead">Answer:</span> </p> <br> &lt;div class="row justify-content-between"&gt; <br> &lt;div class="col-4"&gt; <br> &lt;iframe src="../githubFinder/index.htm"&gt;&lt;/iframe&gt; <br> &lt;/div&gt; &lt;div class="col-4"&gt; <br>            &lt;iframe src="../ageCalculator/index.htm"&gt;&lt;/iframe&gt; <br> &lt;iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"&gt; <br> &lt;/iframe&gt; &lt;/div&gt; &lt;div class="col-4"&gt; <br> &lt;iframe
+            src="../task-list/index.htm"&gt; &lt;/iframe&gt; <br> &lt;/div&gt; &lt;/div&gt; <br> <br>
+            <p class="lead">Output:</p>
+
+            <div class="row justify-content-between">
+                <div class="col-sm-4">
+                    <iframe src="../githubFinder/index.htm"></iframe>
+                </div>
+                <div class="col-sm-4">
+                    <iframe src="https://maps.google.com/maps?q=NationalYouthService&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+                    <!-- <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe> -->
+                </div>
+                <div class="col-sm-4">
+                    <iframe src="../loan-calculator/index.htm"></iframe>
+                </div>
+            </div>
+            <br><br>
+
+            <p><span class="lead">Question 2:</span> Write a program to implement div inline frames and display the content in viewer screen.</p>
+            <p class="lead">Answer:</p>
+
+            <!-- First group of tags -->
+            <div class="text-primary">
+                <h4>This is the first group</h4>
+                <p>The following is a list of fruits for trearting</p>
+                <ul>
+                    <li>Beetroots Juice: to add blood</li>
+                    <li>Pawpaw Juice: to add taste</li>
+                    <li>Pineapple Juice: to add acid</li>
+                    <li>Thone Melon Juice: to add vitamin</li>
+                </ul>
+            </div>
+            <!-- Second group of tag -->
+            <div class="text-success">
+                <h4>This is the second group</h4>
+                <p>Following is a list of vegetables for health</p>
+                <ul>
+                    <li>Managu goes with Meat</li>
+                    <li>Mrenda goes with dry fish</li>
+                    <li>Cabbage goes with rice, Chapati</li>
+                    <li>Dhafai goes with Mukimo</li>
+                </ul>
+            </div>
+            <!-- Third group of tag -->
+            <div class="text-warning">
+                <h4>This is the third group</h4>
+                <p>Following is a list of Gimma in our Community</p>
+                <ul>
+                    <li>Gima ya mihogo with meat</li>
+                    <li>Gima ya millet with chicken</li>
+                    <li>Gima ya maize with fillet</li>
+                    <li>Gima ya rice with milk</li>
+                </ul>
+            </div>
+
+            <br><br><br>
+            <p>In &lt;iFrame&gt; tag attribute they include frameborder, longdescription, margin-height, margin-width, scrolling, styles and title that behaves exactly like corresponding attribute for frame tag and &lt;frameset&gt; tag attribute</p>
+        </div>
+        <br>
+        <div class="container">
+            <h3>HTML BLOCK FRAMES</h3>
+            <p>There are two categories of html frames, They include:
+                <ul=*>
+                    <li>category of block level</li>
+                    <li>category of inline block level(iFrame)</li>
+                </ul=*>
+            </p>
+            <br>
+            <h3>Block Elements</h3>
+            <p>Block element appear on the screen as if they have a line break before and after them. <br> For example &lt;p&gt;, &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;, &lt;ul&gt;, &lt;ol&gt;, &lt;dl&gt;, &lt;hr&gt; are all
+                examples of block level frames and frameset. <br> They all start on their own new line and any content that follow them appear on its own new line</p><br>
+            <h3>Inline Elements of a Frame</h3>
+            <p>Inline elements on other hand can appear within sentence and do not have to appear on new line of their own. The &lt;b&gt;, &lt;i&gt;, &lt;u&gt;, &lt;am&gt;, &lt;strong&gt;, &lt;sup&gt;, &lt;sub&gt;, &lt;big&gt;, &lt;small&gt;, &lt;li&gt;,
+                &lt;del&gt;, &lt;code&gt;, &lt;cite&gt;, &lt;kbd&gt;, &lt;var&gt; are all types of inline element of a frame</p>
+            <br>
+            <h3>Grouping of html Elements</h3>
+            <p>HTML elements can be grouped into two: </p>
+            <ol>
+                <li>By use of div element</li>
+                <li>By use of span element</li>
+            </ol>
+            <h4>div</h4>
+            <p>They are used to create webpage layout where we define different parts of the page. e.g. let, write, top. <br> The tag does not provide any visual page on the block but is used to display the content with the <span class="text-info">css</span></p>
+            <h4>span</h4>
+            <p>Its an inline element and can be used to group inline element in an HTML document. <br> This tag does not provide any visual page on the block but has no meaning when it is used with the css.</p>
+            <h4>Difference between &lt;div&gt; and &lt;span&gt;</h4>
+            <p>The main difference between a &lt;span&gt; tag and &lt;div&gt; tag is that, span tag uses inline element whereas the div tag uses the block element.</p>
+
+            <p><span class="lead"> Question:</span> Write html program to implement &lt;span&gt; element</p>
+
+            &lt;p class="text-center"&gt; This is a <span class="bg-warning"> &lt;span class="text-danger"&gt; span&lt;span&gt;</span> example &lt;p&gt; <br> <br>
+
+            <p class="text-center">This is a <span class="text-danger">span</span> example</p>
+        </div>
+
+        <hr>
+
+        <div class="container">
+            <h3 class='text-center text-decoration-underline'>JAVASCRIPT</h3>
+            <P> - JavaScript is a dynamic script programming language, it is light-weight and most commonly used as part of webpage whose implementation allow client-side script to interruct with the user and make dynamic pages. <br> - It is an interprated programming language with object-oriented capabilities. <br> - Client Side JavaScript is the most common form of language that include an html document for the code to be interprated by the browser.</P>
+            <p>-JavaScript Client Side provide many advantages over traditional CGI Server-Side script. <br> - Its code is executed when the user submits the form and only if all the entries are valied, they will be submitted to the Web-Server <br> - It can be used to serve user initiated events such as button onClick, Link navigation and other actions that the user initiates</p>
+            <h4>Advantages of JavaScript</h4>
+            <p>There are numerus advantages user gets from JavaScript;</p>
+            <ul>
+                <li>Less Server Interruction</li>
+                <p> - One can validate user input before sending the page off to the server. This saves on server traffic.</p>
+                <li>Immediate feedback to the visitor</li>
+                <p> - They dont have to wait for a page reload to see whether they have forgotten to enter something.</p>
+                <li>Increased interructivity</li>
+                <p> - One can create interface that interructs when the user hover over them with a  mouse or activate them via the ⌨ keyboard onClick</p>
+                <li>Richer Interface</li>
+                <p> - One can use JavaScript to include items as drag and drop component and sliders to give richer interface to site visiters.</p>
+            </ul>
+
+            
+            <h4>Limitations of JavaScript</h4>
+            <p>We cannot treat JavaScript as full-fledged programming language due to the fact that it lack some important features. This are;</p>
+            <ul>
+                <li>Client_Side JavaScript does not allow the reading or writing of files. This has been kept for security reasons.</li>
+                <li>Javascript cannot be used for networking applications because there is no such support available for is</li>
+                <li>JavaScript doesn't have any multi-threading or multiprocessing capabilities.</li>
+            </ul>
+            <br><br>
+            
+            <h4>JavaScript Syntax</h4>
+            <p> - JavaScript can be implemented using JavaScript statement that are placed within &lt;script&gt; html tag in a webpage. It can be expressed as;</p>
+            <p>&lt;html&gt; <br>&emsp; &lt;head&gt; <br> &emsp;&emsp;&lt;script&gt; <br> &emsp;&emsp;&emsp;. <br> &emsp;&emsp;&emsp;. <br> &emsp;&emsp;&emsp;. <br> &emsp;&emsp;&lt;/script&gt; <br> &emsp;&lt;/head&gt; <br> &lt;/html&gt;</p>
+            <p> - The script tag take two important property, that is</p>
+            <ol>
+                <li>Language</li>
+                <p> - This attribute what scripting language you're dealing with</p>
+                <li>Type</li>
+                <p>This attribute is what is indicated in the scripting language and its value should be set to "text/JavaScript". Can be expressed as;</p>
+                <p>&lt;script language="JavaScript" type="text/JavaScript">
+                    document.write("Hello ICT10")&lt;/script&gt;
+                </p>
+            </ol>
+            <p>JavaScript is flexible given that it include code anywhere in html document. However, the most prefered way to include JavaScript in html file as follows:</p>
+            <ul>
+                <li><b>script in &lt;head&gt;. . .&lt;/head&gt; section</b></li>
+                <p> If you want to have a script on some events, the user must declare where to place the script in the head section </p>
+                &lt;script type="text/JavaScript"&gt; <br>
+                &emsp;function sayHello() { <br>
+                    &emsp;&emsp;alert "Hellow ICT 10" <br>
+                } <br>
+                &lt;/script&gt; <br>
+
+                <li><b>script in &lt;body&gt;. . .&lt;/body&gt; section</b></li>
+                <p>To run the page load on the body section, the script generates content in the page. Then the script goes into the body portion of the document which will display the function define in the JavaScript</p>
+                &lt;script type="text/JavaScript"&gt; <br>
+                &emsp;document.write("Hello ICT 10") <br>
+                &lt;/script&gt; <br>
+
+                <li><b>script in &lt;body&gt;and &lt;head&gt;. . .&lt;/head&gt;&lt;/body&gt; section</b></li>
+                <p>To put Javascriptcode in head and body tag section, all the head and body section have to be included. <br> This will enable the head section to be displayed on the header and the body section to contain the bdy content.</p>
+                &lt;input type="button" onClick=sayHello() value="say Hellow ICT 10"&gt; <br>
+
+                <li><b>script in external file and then include &lt;head&gt;. . .&lt;/head&gt; section</b></li>
+                <p>Here it restrict reusing of identical code on a multiple pages of a site. The &lt;script&gt; tag provides a mechanisim to allow proogrammer to store Javascript in an external files and then include it into html files.</p>
+                <p class="lead">Example 1</p> <p>Write a program to include an external Javascript file in your html code using &lt;script&gt; tag and its src attribute.</p>
+                &lt;script type="text/JavaScript" src="filename.js"&gt;&lt;/script&gt;
+            </ul>
+            <h4>JavaScript Variables</h4>
+            <h5 class="lead"><u>JavaScript DataTypes</u></h5>
+            <p>One of the most fundamental characteristic of programming language is the set datatypes it supports. JavaScript datatypes have 3 major primitive datatypes, i.e. <ol>
+                <li>Number</li>
+                10, 141, 61.
+                <li>String</li>
+                "text", "names", "etc".
+                <li>Boolean</li>
+                True or False.
+            </ol>
+            There are other two JavaScript datatypes, i.e. <strong>null & undefined</strong> each of it only define a single value.
+            <p>JavaScript support composite datatypes known as objects. It doesn't make distinction between interger values and floating point values. But all numbers are represented as floating point values in JavaScript.</p>
+            <p>JavaScript is case sensitive thus key words should not be used as variables declared</p>
+        </p>
+        <h4 class="lead"><u>JavaScript Variables</u></h4>
+        <p>While naming variables in JavaScript, keep the following rules in mind;</p>
+        <ol>
+            <li>Reserved keywords should not be used as a variable name, eg. var, boolean etc</li>
+            <li>JavaScript variable should not start with a number or numerical (0-9)</li>
+            <li>They must begin with a letter or an underscore character.</li>
+        </ol>
+        <p>When storing a value in a variable, it is called variable initialization <br> &emsp;e.g. var name = 15</p>
+        <h5 class="lead"><u>Syntax Declaration of Variables</u></h5>
+        &lt;script type="text/JavaScript"&gt; <br>
+        &emsp13; var name = "Nick"; <br>
+        &emsp13; var money; <br>
+        &lt;/script&gt;
+        <p>Therefore to create a variable name money and assign the value 50,000 is variable declaration and initialization</p>
+        <p>NB: The use of var keyword is only for declaration or initialization once for the life of any variable name in the document.</p>
+        
+        <h3>Variables</h3>
+        <p>Storing a value in a variable is called variable initialization. <br> Programmer can do variable initialization at the point of variable creation or at a later point when you need that variable. <br> A variable created named money and assigned the value of 2050 to it later, this is called variable declaration or initialization for the life of any variable name in a document. You should not redeclare the same variable twice.</p>
+        <p>This can be explained with this syntax</p>
+        <p>JavaScript untyped variable means that a variable can hold a value of any datatype unlike other languages where declaration type of value can hold only a variable that can change during execution of the program.</p>
+
+        <h4>JavaScript Variable Scope</h4>
+        <p>The scope of a variable is the region of your program in which it is defined. There are two major scopes, i.e.
+            <ol>
+                <li>Global Variable</li>
+                - It has a global scope in which it can be defined anywhere in the Javascript code.
+                <li>Local Variable</li>
+                - Is visible only within the function where it is defined.
+            </ol>
+        </p>
+        <h5>Example 1</h5>
+        <span>
+            &lt;body onload=checkScope();&gt; <br>
+            &emsp; &lt;script type="text/JavaScript"&gt; <br>
+            &emsp; &emsp; var myvar = "global"; <span class="text-success">//Declare global variable</span> <br>
+            &emsp; &emsp; function checkScope() { <br>
+            &emsp; &emsp; &emsp; var myvar = "local" &gt; <span class="text-success">//Declare local variable</span> <br>
+            &emsp; &emsp; &emsp; document.write(myvar); &gt; <br>
+            &emsp; &emsp;}
+        </span> <br>
+        <p>The variable names are defined using the following names
+            <ul>
+                <li>JavaScript reserved names are not used. This keywords are mentioned e.g. break, boolean, goto, etc are not valid variables in javascript.</li>
+                <li>JavaScript variable names should not start with numericals.</li>
+                <li>JavaScript variables must begin with letters or an underscore character</li>
+            </ul>
+        </p>
+
+        <h3>JavaScript Operator</h3>
+        <p>There are 5 major operators commonly used in JavaScript;
+            <ol>
+                <li class="text-underlined">Arithmetic Operator</li>
+                - Its supports 7  major operators with the variable <span class="text-bold"> a</span> to hold 10 and variable <span class="text-bold"> b</span> to hold 20
+                <li>Comparison Operatot</li>
+                <li>Logical (Relational) Operator</li>
+                <li>Assignment Operator</li>
+                <li>Conditional (Tenary) Operators</li>
+            </ol>
+        </p>
+        <table class="table table-striped">
+            <thead>
+                <th scope="col">#</th>
+                <th>Operation Name</th>
+                <th>Operation Description</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>+ Addition</td>
+                    <td>It adds two operands e.g. A + B to give 30</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>- Subtraction</td>
+                    <td>It subtracts the second operand e.g. A - B to give -10</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>*/x Multiplication</td>
+                    <td>It multiply both the operands e.g. A x B to give 200 </td>
+                </tr>
+                <tr>
+                    <th scope="row">4</th>
+                    <td>/ Division</td>
+                    <td>It divides the numerator by the denominator e.g. A / B to give  </td>
+                </tr>
+                <tr>
+                    <th scope="row">5</th>
+                    <td>% Modulars</td>
+                    <td>Outputs the remainder of the integer division e.g. A % B to give 0 </td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>++ Increment</td>
+                    <td>It increases  an integer value by 1 e.g. A++ to give 11 & B++ to give 21 </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>-- Decreament</td>
+                    <td>It decreament an integer value by 1 e.g. A-- to give us 9 and B-- to give us 19 </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Example to demonstrate on Arithmetic operators using JavaScript</p>
+        <span>
+            var a = 33; <br>
+            var b = 10; <br>
+            var c = result; <br>
+            <br>
+            document.write("a + b ="); <br>
+            result = a + b; <br>
+            document.write(result);
+        </span>
+        <script>
+            var a = 33;
+            var b = 10;
+            var c = result;
+           
+            document.write("a + b =");
+            result = a + b;
+            // document.write(result);
+            document.getElementById('opp').innerHTML = result
+        </script>
+        <p id="opp"></p>
+            
+        <p>
+            Click the chrome menu at the top right corner of the browser <br>
+            Select settings <br>
+            Click show advanced setting at the end of the page <br>
+            Under privacy section, click content setting button <br>
+            In JavaScript section, select do not allow any sight to run JavaScript <br>
+
+        </p>
+        </div>
+
+        <div class="space" style="margin-bottom: 1000px;"></div>
+</body>
+
+</html>
